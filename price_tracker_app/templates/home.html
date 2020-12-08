@@ -1,0 +1,13 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p>Holi</p>
+        {% for item in items %}
+            <div>{{ item.name }}</div>
+            {% for price in item.prices.values %}
+                Fecha: {{ price.date }} Precio: {{ price.price }}
+            {% endfor %}
+        {% endfor %}
+    </body>
+</html>
